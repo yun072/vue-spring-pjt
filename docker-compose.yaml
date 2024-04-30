@@ -1,5 +1,15 @@
-FROM openjdk:17-alpine
+name: Java with Gradle
 
-WORKDIR /app-backend
+on:
+  push:
+    branches: [main]
 
-ARG JAR_FILE=target/*.jar
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Source checkout
+      uses: actions/checkout@v2
+      
+
