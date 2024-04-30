@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Source checkout
+    - name: Source Checkout
       uses: actions/checkout@v2
       
 
